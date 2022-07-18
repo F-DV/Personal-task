@@ -1,0 +1,27 @@
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th> </th>
+      <th>Tipo</th>
+      <th>Descripción</th>
+      <th>Prioridad</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <th>
+        <input type="checkbox">
+      </th>
+      <th>{{task.type}}</th>
+      <th>{{task.description}}</th>
+      <th>{{task.priority}}</th>
+      <th>Editar</th>
+      <th>Eliminar</th>
+      <th>+</th>
+      <th>-</th>
+    </tr>
+  </tbody>
