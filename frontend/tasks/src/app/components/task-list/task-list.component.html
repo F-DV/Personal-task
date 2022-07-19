@@ -12,16 +12,20 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let task of tasks">
+    <tr *ngFor="let task of tasks; index as i">
       <th>
         <input type="checkbox">
       </th>
       <th>{{task.type}}</th>
       <th>{{task.description}}</th>
       <th>{{task.priority}}</th>
-      <th>Editar</th>
-      <th>Eliminar</th>
-      <th>+</th>
-      <th>-</th>
+      <th><p type="button" (click)="edit(task.id)">Editar</p></th>
+      <th><p type="button" (click)="delet(task.id)">Eliminar</p></th>
+      <th><p type="button" (click)="up(i,task)">+</p></th>
+      <th><p type="button" (click)="down(i,task)">-</p></th>
     </tr>
   </tbody>
+</table>
+<div *ngIf="showEdit === true">
+  <app-update-task [assingId]="editId"></app-update-task>
+</div>

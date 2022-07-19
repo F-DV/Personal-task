@@ -2,14 +2,24 @@ package com.challenge.tasks.dto;
 
 public class TaskDto {
 
+    private Long id;
     private String type;
     private String description;
     private String priority;
 
-    public TaskDto(String type, String description, String priority) {
+    public TaskDto(Long id, String type, String description, String priority) {
+        this.id = id;
         this.type = type;
         this.description = description;
         this.priority = priority;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getType() {

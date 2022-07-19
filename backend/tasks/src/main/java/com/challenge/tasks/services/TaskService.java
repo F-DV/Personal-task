@@ -10,11 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
 public class TaskService {
-
 
     @Autowired
     private TaskDao taskDao;
@@ -28,17 +28,39 @@ public class TaskService {
 
         return tasks
                 .stream()
-                .map(element -> mapper.taskDaoToTaskDto(element))
+                .map(element -> mapper.taskToTaskDto(element))
                 .collect(Collectors.toList());
     }
 
-     /*
-    @Autowired
-    TaskRepository taskRepository;
-
-    public List<Task> getTasks(){
-        return this.taskRepository.findAll();
+    public TaskDto createTask(TaskDto taskDto){
+        Task newTask = mapper.taskDtoToTask(taskDto);
+        this.taskDao.createTask(newTask);
+        return mapper.taskToTaskDto(newTask);
     }
 
-     */
+    public TaskDto saveTask(TaskDto taskDto){
+        Task task = mapper.taskDtoToTask(taskDto);
+        this.taskDao.saveTask(task);
+        return mapper.taskToTaskDto(task);
+    }
+
+    public TaskDto updateTask(TaskDto taskDto){
+        Task updatedTask = mapper.taskDtoToTask(taskDto);
+        this.taskDao.updateTask(updatedTask);
+        return mapper.taskToTaskDto(updatedTask);
+    }
+
+    public TaskDto findById(Long id){
+        TaskDto taskDto = mapper.taskToTaskDto(this.taskDao.findById(id));
+        return taskDto;
+    }
+
+    public boolean deleteTask(Long id){
+        try{
+            taskDao.deleteById(id);
+            return true;
+        }catch (Exception err){
+            return false;
+        }
+    }
 }
