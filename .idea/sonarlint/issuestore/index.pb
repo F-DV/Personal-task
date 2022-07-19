@@ -1,0 +1,27 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+H
+backend/tasks/.gitignore,1\7\17f92970025742eae476577ff57ef5b972105a66
+v
+Fbackend/tasks/src/main/java/com/challenge/tasks/config/TaskConfig.java,1\6\16b0a8422a67e83f4aecde778cd6b1bd221b6579
+p
+@backend/tasks/src/main/java/com/challenge/tasks/dao/TaskDao.java,f\f\ff020f93e44143a1df1f35f80203d9780b3ffbc4
+{
+Kbackend/tasks/src/main/java/com/challenge/tasks/daoimp/TaskMySqlDaoImp.java,7\6\7660c9154e463c332f23679e03b6ef31fbed28a4
+w
+Gbackend/tasks/src/main/java/com/challenge/tasks/mappers/TaskMapper.java,3\6\367e552e70aac3c5d44d51c6ec9668aeffa96c9c
+r
+Bbackend/tasks/src/main/java/com/challenge/tasks/entities/Task.java,d\1\d10b8cb650a33646ff6a8333f4b525148dd6baf4
+€
+Pbackend/tasks/src/main/java/com/challenge/tasks/repositories/TaskRepository.java,f\9\f9bfdb7aa848c41e43169af4ba178710cedc7170
+E
+backend/tasks/pom.xml,7\e\7e7250450c0e261278cdf56ebc4053b6e955f989
+p
+@backend/tasks/src/main/java/com/challenge/tasks/dto/TaskDto.java,5\5\5510c1bd2ba2dcc78143d2bd6698eb0f9d81bf4d
+y
+Ibackend/tasks/src/main/java/com/challenge/tasks/services/TaskService.java,8\1\812c684d88d0a8112569b653d92e51d5ccba800b
+u
+Ebackend/tasks/src/main/java/com/challenge/tasks/TasksApplication.java,e\3\e3903e192ea94196df5cf496c94ee232d5763852
+
+Obackend/tasks/src/main/java/com/challenge/tasks/controllers/TaskController.java,d\4\d4d8e5f34686118c8cd136858df249f274d1bc37

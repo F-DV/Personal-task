@@ -1,5 +1,31 @@
-<h1 class="text-center">{{title}}</h1>
-<div class="container">
-  <app-task-list></app-task-list>
+<div class="container ">
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#static">
+  Nueva Tarea
+</button>
+
+</div>
+<div class="container ">
+  <div>
+   <app-task-list></app-task-list>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="static" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="staticLabel">Nueva Tarea</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-new-task></app-new-task>
+      </div>
+    </div>
+  </div>
+</div>
+  <br>
 </div>
 
