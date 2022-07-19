@@ -51,19 +51,25 @@ export class UpdateTaskComponent implements OnInit {
 
   updateTask(){
 
-    //Cambios recibidos de la vista
-    const change:UpdateDto = {
-      type: this.taskChosen.type,
-      priority: this.taskChosen.priority,
-      description: this.taskChosen.description,
-    };
+    try{
+      //Cambios recibidos de la vista
+      const change:UpdateDto = {
+        type: this.taskChosen.type,
+        priority: this.taskChosen.priority,
+        description: this.taskChosen.description,
+      };
 
-    this.taskService.updateTask(this.idChosen,change)
-    .subscribe(data => {
-      const taskIndex = this.tasks.findIndex(item => item.id === this.taskChosen.id);
-      this.tasks[taskIndex] = data;
-    });
-    this.getTasks();
+      this.taskService.updateTask(this.idChosen,change)
+      .subscribe(data => {
+        const taskIndex = this.tasks.findIndex(item => item.id === this.taskChosen.id);
+        this.tasks[taskIndex] = data;
+      });
+      this.getTasks();
+      alert("La tarea se edito con exito")
+;    }catch(error){
+      console.log('no se pudo editar:',error)
+    }
+
   }
 
   cancel(){

@@ -32,7 +32,6 @@ export class NewTaskComponent implements OnInit {
       console.log('data',data);
     })
 
-
   }
   cancel(){
     this.task = {

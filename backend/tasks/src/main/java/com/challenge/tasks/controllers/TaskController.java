@@ -1,10 +1,8 @@
 package com.challenge.tasks.controllers;
 
 import com.challenge.tasks.dto.TaskDto;
-import com.challenge.tasks.entities.Task;
 import com.challenge.tasks.services.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,7 +20,7 @@ public class TaskController {
         return this.taskService.getTasks();
     }
 
-    @PostMapping
+    @PostMapping(path = "/saveTask")
     public TaskDto createNewTask(@RequestBody TaskDto taskDto){
 
         return this.taskService.createTask(taskDto);

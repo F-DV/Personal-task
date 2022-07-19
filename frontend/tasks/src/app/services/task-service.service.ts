@@ -21,7 +21,7 @@ export class TaskServiceService {
 
   //Crear nueva tarea
   createTask(dto:CreateDto){
-    return this.httpClient.post<Task>(`${this.baseUrl}`,dto);
+    return this.httpClient.post<Task>(`${this.baseUrl}saveTask`,dto);
   }
 
   //Actualizar tarea

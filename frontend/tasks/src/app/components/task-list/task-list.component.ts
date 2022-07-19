@@ -45,7 +45,7 @@ export class TaskListComponent implements OnInit {
 
   delet(id:number){
     this.taskService.deleteTask(id)
-    .subscribe(dato => console.log(dato));
+    .subscribe(data => console.log(data));
     this.getTasks();
   }
 

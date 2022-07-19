@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tasks';
-  showEdit:boolean = false;
+  showNewTask:boolean = false;
 
+handleShowNewTask(){
+  this.showNewTask = true;
+}
 
 }

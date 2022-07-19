@@ -1,4 +1,4 @@
-<h3>Nueva Tarea</h3>
+
 <form>
   <div class="form-group row">
     <label for="type" class="col-sm-2 col-form-label">Tipo Tarea</label>
@@ -23,7 +23,8 @@
     </div>
   </div>
   <div class="btn-group">
-    <button type="button" (click)="cancel()">Cancelar</button>
-    <button (click)="createNewTask()" type="button">Guardar</button>
+    <button type="button" class="btn btn-secondary" (click)="cancel()" data-dismiss="modal">Cancelar</button>
+    <button (click)="createNewTask()" class="btn btn-primary" type="button" data-dismiss="modal">Guardar</button>
   </div>
 </form>
+
