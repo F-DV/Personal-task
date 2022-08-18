@@ -51,7 +51,8 @@ public class TaskService {
     }
 
     public TaskDto findById(Long id){
-        TaskDto taskDto = mapper.taskToTaskDto(this.taskDao.findById(id));
+        TaskDto taskDto = mapper.taskToTaskDto(
+                this.taskDao.findById(id));
         return taskDto;
     }
 

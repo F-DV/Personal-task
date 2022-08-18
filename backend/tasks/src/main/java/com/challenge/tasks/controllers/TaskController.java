@@ -23,7 +23,7 @@ public class TaskController {
     @PostMapping(path = "/saveTask")
     public TaskDto createNewTask(@RequestBody TaskDto taskDto){
 
-        return this.taskService.createTask(taskDto);
+        return this.taskService.saveTask(taskDto);
     }
 
     @PutMapping(path = "/{id}")

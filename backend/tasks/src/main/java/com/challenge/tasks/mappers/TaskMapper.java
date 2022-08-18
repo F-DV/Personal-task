@@ -1,6 +1,5 @@
 package com.challenge.tasks.mappers;
 
-import com.challenge.tasks.dao.TaskDao;
 import com.challenge.tasks.dto.TaskDto;
 import com.challenge.tasks.entities.Task;
 import org.mapstruct.InheritInverseConfiguration;

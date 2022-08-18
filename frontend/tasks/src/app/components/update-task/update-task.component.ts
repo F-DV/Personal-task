@@ -24,6 +24,7 @@ export class UpdateTaskComponent implements OnInit {
     priority: "",
     description: ""
   }
+
   options:string[] = ["Hogar","Trabajo","Hábito"];
   priorities:string[] = ["Alta","Media","Baja"];
   tasks: Task[] = [];
@@ -69,7 +70,6 @@ export class UpdateTaskComponent implements OnInit {
 ;    }catch(error){
       console.log('no se pudo editar:',error)
     }
-
   }
 
   cancel(){
