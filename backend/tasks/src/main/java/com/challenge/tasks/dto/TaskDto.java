@@ -14,6 +14,9 @@ public class TaskDto {
         this.priority = priority;
     }
 
+    public TaskDto() {
+    }
+
     public Long getId() {
         return id;
     }

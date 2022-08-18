@@ -27,11 +27,15 @@ export class NewTaskComponent implements OnInit {
   }
 
   createNewTask(){
-    this.taskService.createTask(this.task)
-    .subscribe(data => {
-      console.log('data',data);
-    })
-
+    try{
+      this.taskService.createTask(this.task)
+      .subscribe(data => {
+        console.log('data',data);
+      })
+      alert("Tarea creada con exito");
+    }catch(error){
+      console.log("Error:",error);
+    }
   }
   cancel(){
     this.task = {

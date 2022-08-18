@@ -23,7 +23,7 @@ public class TaskController {
     @PostMapping(path = "/saveTask")
     public TaskDto createNewTask(@RequestBody TaskDto taskDto){
 
-        return this.taskService.createTask(taskDto);
+        return this.taskService.saveTask(taskDto);
     }
 
     @PutMapping(path = "/{id}")
@@ -34,8 +34,7 @@ public class TaskController {
         taskDto1.setPriority(taskDto.getPriority());
         taskDto1.setDescription(taskDto.getDescription());
 
-        this.taskService.saveTask(taskDto1);
-        return this.taskService.updateTask(taskDto);
+        return this.taskService.updateTask(taskDto1);
     }
 
     @DeleteMapping(path = "/{id}")
