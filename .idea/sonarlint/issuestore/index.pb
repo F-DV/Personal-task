@@ -15,13 +15,9 @@ r
 Bbackend/tasks/src/main/java/com/challenge/tasks/entities/Task.java,d\1\d10b8cb650a33646ff6a8333f4b525148dd6baf4
 €
 Pbackend/tasks/src/main/java/com/challenge/tasks/repositories/TaskRepository.java,f\9\f9bfdb7aa848c41e43169af4ba178710cedc7170
-E
-backend/tasks/pom.xml,7\e\7e7250450c0e261278cdf56ebc4053b6e955f989
 p
 @backend/tasks/src/main/java/com/challenge/tasks/dto/TaskDto.java,5\5\5510c1bd2ba2dcc78143d2bd6698eb0f9d81bf4d
 y
 Ibackend/tasks/src/main/java/com/challenge/tasks/services/TaskService.java,8\1\812c684d88d0a8112569b653d92e51d5ccba800b
 u
 Ebackend/tasks/src/main/java/com/challenge/tasks/TasksApplication.java,e\3\e3903e192ea94196df5cf496c94ee232d5763852
-
-Obackend/tasks/src/main/java/com/challenge/tasks/controllers/TaskController.java,d\4\d4d8e5f34686118c8cd136858df249f274d1bc37
