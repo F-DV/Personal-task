@@ -27,7 +27,7 @@ Tecnologías a usar:
 - Utilizar Servidor de su preferencia
 - Utilizar Node js (Comprobar que la compilación del proyecto dentro del servidor de aplicaciones esté correctamente configurado para soportar esta versión)
 - La solución deberá ser desarrollada con Angular (FrontEnd)
-- El motor de base de datos a usar será MySQL.
+- El motor de base de datos a usar será PostgreSQL.
 
 
   Recomendaciones Finales:
